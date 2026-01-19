@@ -43,7 +43,6 @@ For ease of testing, the database script includes two pre-configured accounts:
    ```
 2. Open `appsettings.json`.
 3. Update the `ConnectionStrings` and `Jwt` settings with your local values.
-   *(Note: For security, real passwords are not committed. You must enter your own local database credentials.)*
    ```json
    {
      "ConnectionStrings": {
