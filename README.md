@@ -24,7 +24,7 @@ For ease of testing, the database script includes two pre-configured accounts:
 | **Admin** | `admin@demo.com` | `password123` |
 | **User** | `user@demo.com` | `password123` |
 
-> **Note:** The Admin account has full access to delete vehicles and view system logs.
+> **Note:** The Admin account has full access to delete vehicles and view user data.
 
 ## ⚙️ Setup Instructions
 
