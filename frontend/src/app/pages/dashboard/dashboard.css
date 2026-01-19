@@ -1,0 +1,70 @@
+.dashboard-container {
+  padding: 32px;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.controls section {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s;
+}
+
+/* Make report section span full width (2 columns if possible) */
+.controls section.report-section {
+  grid-column: span 2;
+}
+
+@media (max-width: 1024px) {
+  .controls section.report-section {
+    grid-column: span 1; /* fallback to 1 on smaller screens */
+  }
+}
+
+.controls section:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.controls section h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005ea3;
+}
+
+@media (max-width: 768px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .controls section.report-section {
+    grid-column: span 2;
+  }
+}

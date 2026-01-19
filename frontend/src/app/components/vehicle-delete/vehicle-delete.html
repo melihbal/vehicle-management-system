@@ -1,0 +1,45 @@
+<div class="group2">
+    <div class="buttons-column">
+      <div class="column-header"></div>
+      <div>
+        <dx-button
+          stylingMode="outlined"
+          text="Delete Vehicle"
+          type="normal"
+          [width]="120"
+          (onClick)="onToggleShowTextBox()"
+        >
+        </dx-button>
+      </div>
+      <div *ngIf="showTextBoxDelete" style="margin-top: 10px;">
+        <dx-text-box
+          [value]="inputValueIdDelete"
+          (valueChange)="onInputValueIdChange($event)"
+          [width]="200"
+          placeholder="ID"
+        ></dx-text-box>
+      </div>
+      <div *ngIf="showTextBoxDelete" style="margin-top: 10px;">
+        <dx-date-box
+          [value]="inputValueDateDelete"
+          (valueChange)="onInputValueDateChange($event)"
+          type="date"
+          [inputAttr]="{ 'aria-label': 'Date' }"
+          [width]="150"
+        ></dx-date-box>
+      </div>
+      <div *ngIf="showTextBoxDelete" style="margin-top: 10px;">
+        <dx-button
+          stylingMode="contained"
+          text="Delete"
+          type="danger"
+          [width]="80"
+          (onClick)="onClickDeleteSub()"
+        ></dx-button>
+      </div>
+      <div *ngIf="showWarningDelete" class="warning-text">
+        {{ warningMessageDelete }}
+      </div>
+    </div>
+  </div>
+  

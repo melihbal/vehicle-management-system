@@ -1,0 +1,24 @@
+<div class="search-container" style="width: 400px;">
+  <div class="input-button-wrapper">
+    <dx-text-box
+      [(value)]="searchInput"
+      [placeholder]="'Search by username...'"
+      [showClearButton]="true"
+      [width]="300"
+      (onValueChanged)="onTextBoxValueChanged($event)"
+      (onEnterKey)="onSearchClicked()">
+    </dx-text-box>
+
+    <dx-button
+      text="Search"
+      type="default"
+      stylingMode="contained"
+      (onClick)="onSearchClicked()"
+      style="width: 90px; margin-left: 10px;">
+    </dx-button>
+  </div>
+
+  <div *ngIf="noSuchUserFound" class="warning-message">
+    {{ warningMessageNoSuchUser }}
+  </div>
+</div>

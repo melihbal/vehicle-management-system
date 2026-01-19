@@ -1,0 +1,99 @@
+<div class="group5">
+    <div class="buttons-column">
+      <!-- Report button -->
+      <dx-button
+        stylingMode="outlined"
+        text="Report"
+        type="normal"
+        [width]="120"
+        (onClick)="openReport.emit()"
+      ></dx-button>
+  
+      <div *ngIf="showTextBox" style="margin-top: 10px;">
+        <dx-date-range-box
+        [startDate]="startDate"
+        (startDateChange)="handleStartDateChange($event)"
+        [endDate]="endDate"
+        (endDateChange)="handleEndDateChange($event)"
+        [startDateLabel]="'Start Date'"
+        [endDateLabel]="'End Date'"
+        [width]="300"
+        type="date"
+        ></dx-date-range-box>
+      </div>
+  
+      <div *ngIf="showTextBox" style="margin-top: 10px;">
+        <dx-drop-down-box
+          [value]="selectedVehicleIds"
+          [dataSource]="flatDataSource"
+          valueExpr="ID"
+          displayExpr="name"
+          placeholder="Select vehicles..."
+          [showClearButton]="true"
+          [width]="300"
+          [acceptCustomValue]="false"
+          [opened]="isDropDownOpen"
+        >
+          <div *dxTemplate="let data of 'content'">
+            <dx-list
+              [dataSource]="flatDataSource"
+              keyExpr="ID"
+              displayExpr="name"
+              selectionMode="multiple"
+              [showSelectionControls]="true"
+              (onSelectionChanged)="onSelectionChanged($event)"
+              [height]="200"
+            ></dx-list>
+          </div>
+        </dx-drop-down-box>
+      </div>
+  
+      <!-- List button -->
+      <div *ngIf="showTextBox" style="margin-top: 10px;">
+        <dx-button
+          stylingMode="contained"
+          text="List"
+          type="default"
+          [width]="80"
+          (onClick)="listReport.emit()"
+        ></dx-button>
+      </div>
+  
+      <!-- Report table -->
+      <div *ngIf="showTextBox" style="margin-top: 10px;">
+        <div *ngIf="showTextBoxEmpty" style="margin-top: 20px;">
+            <div *ngIf="reportData.length > 0" style="margin-top: 20px;">
+            <h4>Report Results</h4>
+            <table class="report-table" cellpadding="5" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>Araç Plakası</th>
+                    <th>Başlangıç Km</th>
+                    <th>Bitiş Km</th>
+                    <th>Yapılan Km</th>
+                    <th>İlk Veri</th>
+                    <th>Son Veri</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr *ngFor="let row of reportData">
+                    <td>{{ row['Araç Plakası'] || row.licensePlate }}</td>
+                    <td>{{ row['Başlangıç Km'] || row.startingKm }}</td>
+                    <td>{{ row['Bitiş Km'] || row.endingKm }}</td>
+                    <td>{{ row['Yapılan Km'] || row.kmsTraveled }}</td>
+                    <td>{{ row['İlk Veri'] || row.firstDataDate }}</td>
+                    <td>{{ row['Son Veri'] || row.lastDataDate }}</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+      </div>
+  
+      <!-- Warning text -->
+      <div *ngIf="showWarning" class="warning-text">
+        {{ warningMessage }}
+      </div>
+    </div>
+  </div>
+  

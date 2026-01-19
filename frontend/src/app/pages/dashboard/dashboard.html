@@ -1,0 +1,66 @@
+<!-- src/app/pages/dashboard/dashboard.html -->
+<div class="dashboard-container">
+  <app-vehicle-table [vehicles]="vehicles"></app-vehicle-table>
+
+  <app-vehicle-filter
+    [treeDataSource]="treeDataSource"
+    [(treeBoxValue)]="treeBoxValue"
+    [(isTreeBoxOpened)]="isTreeBoxOpened"
+    (treeViewSelectionChange)="treeView_itemSelectionChanged($event)">
+  </app-vehicle-filter>
+
+  <div class="controls">
+    <app-vehicle-create
+      [(showTextBoxCreate)]="showTextBoxCreate"
+      [(inputValueIdCreate)]="inputValueIdCreate"
+      [(inputValuePlakaCreate)]="inputValuePlakaCreate"
+      [(inputValueHizCreate)]="inputValueHizCreate"
+      [(inputValueKmCreate)]="inputValueKmCreate"
+      [(inputValueDateCreate)]="inputValueDateCreate"
+      [showWarningCreate]="showWarningCreate"
+      [warningMessageCreate]="warningMessageCreate"
+      (clickCreate)="clickCreate($event)"
+      (clickAdd)="clickAdd($event)">
+    </app-vehicle-create>
+
+    <app-vehicle-delete
+      [(showTextBoxDelete)]="showTextBoxDelete"
+      [(inputValueIdDelete)]="inputValueIdDelete"
+      [(inputValueDateDelete)]="inputValueDateDelete"
+      [(showWarningDelete)]="showWarningDelete"
+      [warningMessageDelete]="warningMessageDelete"
+      (clickDeleteVehicle)="clickDeleteVehicle($event)"
+      (clickDeleteSub)="clickDeleteSub($event)">
+    </app-vehicle-delete>
+
+    <app-vehicle-edit
+      [(showTextBoxEdit)]="showTextBoxEdit"
+      [(inputValueIdEdit)]="inputValueIdEdit"
+      [(inputValueDateEdit)]="inputValueDateEdit"
+      [(showEditGroup)]="showEditGroup"
+      [(inputValueEditGroupHiz)]="inputValueEditGroupHiz"
+      [(inputValueEditGroupKm)]="inputValueEditGroupKm"
+      [(showWarningEdit)]="showWarningEdit"
+      [warningMessageEdit]="warningMessageEdit"
+      (clickEditVehicle)="clickEditVehicle()"
+      (clickFindToEdit)="clickFindToEdit()"
+      (clickConfirmEdit)="clickConfirmEdit()">
+    </app-vehicle-edit>
+
+    <app-vehicle-report
+      [showTextBox]="showTextBoxReport"
+      [showTextBoxEmpty]="showTextBoxReportEmpty"
+      [(startDate)]="startDateReport"
+      [(endDate)]="endDateReport"
+      [flatDataSource]="flatDataSource"
+      [selectedVehicleIds]="selectedVehicleIds"
+      [isDropDownOpen]="isDropDownOpen"
+      [reportData]="reportData"
+      [showWarning]="showWarningReport"
+      [warningMessage]="warningMessageReport"
+      (openReport)="clickReportVehicle($event)"
+      (listReport)="clickListReport($event)"
+      (selectionChanged)="onListSelectionChanged($event)">
+    </app-vehicle-report>
+  </div>
+</div>

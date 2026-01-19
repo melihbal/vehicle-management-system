@@ -1,0 +1,9 @@
+<div class="layout-container">
+  <app-leftsidebar
+    [isLeftSidebarCollapsed]="isLeftSidebarCollapsedLay()"
+    (changeIsLeftSideBarCollapsed)="changeIsLeftSidebarCollapsedLayout($event)"
+  ></app-leftsidebar>
+  <main class="layout-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>

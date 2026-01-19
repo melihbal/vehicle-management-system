@@ -1,0 +1,69 @@
+<div class="group1">
+    <div class="buttons-column">
+      <div class="column-header"></div>
+      <div>
+        <dx-button
+          stylingMode="outlined"
+          text="New Vehicle"
+          type="normal"
+          [width]="120"
+          (onClick)="onClickCreate($event)"
+        >
+        </dx-button>
+      </div>
+      <div *ngIf="showTextBoxCreate" style="margin-top: 10px;">
+        <dx-text-box
+          [value]="inputValueIdCreate"
+          (valueChange)="onIdChange($event)"
+          [width]="200"
+          placeholder="ID"
+        ></dx-text-box>
+      </div>
+      <div *ngIf="showTextBoxCreate" style="margin-top: 10px;">
+        <dx-text-box
+          [value]="inputValuePlakaCreate"
+          (valueChange)="onPlakaChange($event)"
+          [width]="200"
+          placeholder="Plaka"
+        ></dx-text-box>
+      </div>
+      <div *ngIf="showTextBoxCreate" style="margin-top: 10px;">
+        <dx-text-box
+          [value]="inputValueHizCreate"
+          (valueChange)="onHizChange($event)"
+          [width]="200"
+          placeholder="Hız"
+        ></dx-text-box>
+      </div>
+      <div *ngIf="showTextBoxCreate" style="margin-top: 10px;">
+        <dx-text-box
+          [value]="inputValueKmCreate"
+          (valueChange)="onKmChange($event)"
+          [width]="200"
+          placeholder="Km Sayacı"
+        ></dx-text-box>
+      </div>
+      <div *ngIf="showTextBoxCreate" style="margin-top: 10px;">
+        <dx-date-box
+          [value]="inputValueDateCreate"
+          (valueChange)="onDateChange($event)"
+          type="date"
+          [inputAttr]="{ 'aria-label': 'Date' }"
+          [width]="150"
+        ></dx-date-box>
+      </div>
+      <div *ngIf="showTextBoxCreate" style="margin-top: 10px;">
+        <dx-button
+          stylingMode="contained"
+          text="Add"
+          type="success"
+          [width]="80"
+          (onClick)="onClickAdd($event)"
+        ></dx-button>
+      </div>
+      <div *ngIf="showWarningCreate" class="warning-text">
+        {{ warningMessageCreate }}
+      </div>
+    </div>
+  </div>
+  

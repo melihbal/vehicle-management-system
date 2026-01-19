@@ -1,0 +1,26 @@
+/* app.css */
+
+.container {
+    display: flex;
+    gap: 20px; /* space between the two groups */
+    align-items: flex-start; /* align items at the top */
+  }
+  
+  .group1, .group2, .group3, .group4, .group5 {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  .report-table th, .report-table td {
+    padding: 8px;
+    text-align: left;
+  }
+  .report-table th {
+    background-color: #f0f0f0;
+  }
+  

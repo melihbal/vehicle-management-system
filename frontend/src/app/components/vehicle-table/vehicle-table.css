@@ -1,0 +1,46 @@
+.vehicle-section {
+    margin: 20px 0 20px 40px;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .vehicle-section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #333;
+    text-align: center;
+  }
+  
+  ::ng-deep .dx-datagrid {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  ::ng-deep .dx-datagrid-headers,
+  ::ng-deep .dx-datagrid-rowsview {
+    background-color: #fff;
+  }
+  
+  ::ng-deep .dx-header-row {
+    background-color: #f0f2f5;
+    font-weight: bold;
+  }
+  
+  ::ng-deep .dx-datagrid-rowsview .dx-row:hover {
+    background-color: #e6f7ff;
+  }
+  
+  ::ng-deep .dx-datagrid-rowsview .dx-row:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  ::ng-deep .dx-datagrid .dx-row > td {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #333;
+  }

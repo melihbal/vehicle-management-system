@@ -1,0 +1,18 @@
+.input-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.warning-message {
+  margin-top: 6px;
+  padding: 6px 10px;
+  background-color: #fff4f4; /* light red/pink background */
+  border: 1px solid #f5c2c2; /* soft red border */
+  color: #b33a3a; /* dark red text */
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 1px 3px rgba(179, 58, 58, 0.2);
+  max-width: 400px;
+}

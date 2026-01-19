@@ -1,0 +1,9 @@
+<div class="dashboard-container">
+    <app-user-table [users]="users"></app-user-table>
+  
+    <app-user-filter
+      (usersUpdated)="usersUpdatedMain($event)"
+      (clearClicked)="clearClicked($event)"
+      [noSuchUserFound]="showWarningNoSuchUser">
+    </app-user-filter>
+</div>

@@ -1,0 +1,26 @@
+# --- .NET / C# ---
+bin/
+obj/
+.vs/
+*.user
+*.pdb
+*.suo
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# --- Angular / Node ---
+node_modules/
+dist/
+.angular/
+.sass-cache/
+connect.lock
+coverage/
+lib/
+
+# --- VS Code ---
+.vscode/
+
+# --- OS System Files ---
+.DS_Store
+Thumbs.db

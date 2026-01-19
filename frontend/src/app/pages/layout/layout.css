@@ -1,0 +1,17 @@
+.layout-container {
+    display: flex;
+    height: 100vh; /* Optional: full height */
+  }
+  
+  app-leftsidebar {
+    width: 250px; /* Adjust the width as needed */
+    flex-shrink: 0;
+    background-color: #f5f5f5; /* Optional: for visibility */
+  }
+  
+  .layout-content {
+    flex-grow: 1;
+    padding: 20px; /* Optional: for spacing */
+    overflow: auto; /* Scroll if content overflows */
+  }
+  

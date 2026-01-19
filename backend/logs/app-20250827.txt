@@ -1,0 +1,83 @@
+2025-08-27 13:15:58.360 +03:00 [INF] User profile is available. Using '/Users/osmanmelihbal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-27 13:15:58.416 +03:00 [INF] Now listening on: http://localhost:5027
+2025-08-27 13:15:58.417 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-27 13:15:58.417 +03:00 [INF] Hosting environment: Development
+2025-08-27 13:15:58.417 +03:00 [INF] Content root path: /Users/osmanmelihbal/Desktop/Seyir1/MyWebApi
+2025-08-27 13:16:54.590 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/swagger/index.html - null null
+2025-08-27 13:16:54.643 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/swagger/index.html - 200 null text/html;charset=utf-8 54.1996ms
+2025-08-27 13:16:54.663 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/swagger/swagger-ui.css - null null
+2025-08-27 13:16:54.673 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/swagger/swagger-ui.css - 200 155175 text/css 9.9184ms
+2025-08-27 13:16:54.771 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/swagger/v1/swagger.json - null null
+2025-08-27 13:16:54.827 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 55.5507ms
+2025-08-27 13:16:58.158 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - null null
+2025-08-27 13:16:58.165 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-27 13:16:58.185 +03:00 [INF] Executing endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:16:58.191 +03:00 [INF] Route matched with {action = "TestLog", controller = "Vehicle"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestLog() on controller PostgresAPI.Controllers.VehicleController (MyWebApi).
+2025-08-27 13:16:58.249 +03:00 [INF] User demoUser hit the test endpoint at "2025-08-27T10:16:58.2493690Z"
+2025-08-27 13:16:58.251 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-27 13:16:58.253 +03:00 [INF] Executed action PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi) in 60.4385ms
+2025-08-27 13:16:58.253 +03:00 [INF] Executed endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:16:58.254 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - 200 null text/plain; charset=utf-8 95.7471ms
+2025-08-27 13:17:53.777 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - null null
+2025-08-27 13:17:53.782 +03:00 [INF] Executing endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:17:53.783 +03:00 [INF] Route matched with {action = "TestLog", controller = "Vehicle"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestLog() on controller PostgresAPI.Controllers.VehicleController (MyWebApi).
+2025-08-27 13:17:53.792 +03:00 [INF] User demoUser hit the test endpoint at "2025-08-27T10:17:53.7922820Z"
+2025-08-27 13:17:53.792 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-27 13:17:53.793 +03:00 [INF] Executed action PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi) in 9.4755ms
+2025-08-27 13:17:53.793 +03:00 [INF] Executed endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:17:53.793 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - 200 null text/plain; charset=utf-8 16.4703ms
+2025-08-27 13:18:30.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - null null
+2025-08-27 13:18:30.428 +03:00 [INF] Executing endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:18:30.428 +03:00 [INF] Route matched with {action = "TestLog", controller = "Vehicle"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestLog() on controller PostgresAPI.Controllers.VehicleController (MyWebApi).
+2025-08-27 13:18:30.432 +03:00 [INF] User demoUser hit the test endpoint at "2025-08-27T10:18:30.4324370Z"
+2025-08-27 13:18:30.432 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-27 13:18:30.433 +03:00 [INF] Executed action PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi) in 4.279ms
+2025-08-27 13:18:30.433 +03:00 [INF] Executed endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:18:30.433 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - 200 null text/plain; charset=utf-8 9.414ms
+2025-08-27 13:18:40.388 +03:00 [INF] Application is shutting down...
+2025-08-27 13:18:44.912 +03:00 [INF] User profile is available. Using '/Users/osmanmelihbal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-27 13:18:44.967 +03:00 [INF] Now listening on: http://localhost:5027
+2025-08-27 13:18:44.968 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-27 13:18:44.968 +03:00 [INF] Hosting environment: Development
+2025-08-27 13:18:44.968 +03:00 [INF] Content root path: /Users/osmanmelihbal/Desktop/Seyir1/MyWebApi
+2025-08-27 13:18:59.793 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - null null
+2025-08-27 13:18:59.824 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-27 13:18:59.840 +03:00 [INF] Executing endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:18:59.844 +03:00 [INF] Route matched with {action = "TestLog", controller = "Vehicle"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestLog() on controller PostgresAPI.Controllers.VehicleController (MyWebApi).
+2025-08-27 13:18:59.893 +03:00 [INF] User demoUser hit the test endpoint at "2025-08-27T10:18:59.8931380Z"
+2025-08-27 13:18:59.896 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-27 13:18:59.899 +03:00 [INF] Executed action PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi) in 53.849ms
+2025-08-27 13:18:59.905 +03:00 [INF] Executed endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:18:59.906 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - 200 null text/plain; charset=utf-8 114.3719ms
+2025-08-27 13:19:12.464 +03:00 [INF] Application is shutting down...
+2025-08-27 13:20:27.048 +03:00 [INF] User profile is available. Using '/Users/osmanmelihbal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-08-27 13:20:27.103 +03:00 [INF] Now listening on: http://localhost:5027
+2025-08-27 13:20:27.104 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-27 13:20:27.105 +03:00 [INF] Hosting environment: Development
+2025-08-27 13:20:27.105 +03:00 [INF] Content root path: /Users/osmanmelihbal/Desktop/Seyir1/MyWebApi
+2025-08-27 13:20:30.202 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - null null
+2025-08-27 13:20:30.236 +03:00 [WRN] Failed to determine the https port for redirect.
+2025-08-27 13:20:30.248 +03:00 [INF] Executing endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:20:30.252 +03:00 [INF] Route matched with {action = "TestLog", controller = "Vehicle"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestLog() on controller PostgresAPI.Controllers.VehicleController (MyWebApi).
+2025-08-27 13:20:30.297 +03:00 [INF] User demoUser hit the test endpoint at "2025-08-27T10:20:30.2973600Z"
+2025-08-27 13:20:30.300 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-27 13:20:30.304 +03:00 [INF] Executed action PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi) in 49.8071ms
+2025-08-27 13:20:30.309 +03:00 [INF] Executed endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:20:30.310 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - 200 null text/plain; charset=utf-8 110.6447ms
+2025-08-27 13:21:17.648 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - null null
+2025-08-27 13:21:17.653 +03:00 [INF] Executing endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:21:17.654 +03:00 [INF] Route matched with {action = "TestLog", controller = "Vehicle"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestLog() on controller PostgresAPI.Controllers.VehicleController (MyWebApi).
+2025-08-27 13:21:17.659 +03:00 [INF] User demoUser hit the test endpoint at "2025-08-27T10:21:17.6596480Z"
+2025-08-27 13:21:17.660 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-27 13:21:17.660 +03:00 [INF] Executed action PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi) in 6.2985ms
+2025-08-27 13:21:17.660 +03:00 [INF] Executed endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:21:17.660 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - 200 null text/plain; charset=utf-8 13.216ms
+2025-08-27 13:21:28.561 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - null null
+2025-08-27 13:21:28.577 +03:00 [INF] Executing endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:21:28.578 +03:00 [INF] Route matched with {action = "TestLog", controller = "Vehicle"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult TestLog() on controller PostgresAPI.Controllers.VehicleController (MyWebApi).
+2025-08-27 13:21:28.579 +03:00 [INF] User demoUser hit the test endpoint at "2025-08-27T10:21:28.5797170Z"
+2025-08-27 13:21:28.579 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-08-27 13:21:28.579 +03:00 [INF] Executed action PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi) in 1.7389ms
+2025-08-27 13:21:28.580 +03:00 [INF] Executed endpoint 'PostgresAPI.Controllers.VehicleController.TestLog (MyWebApi)'
+2025-08-27 13:21:28.580 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5027/api/Vehicle/test-log - 200 null text/plain; charset=utf-8 18.3076ms
+2025-08-27 13:21:42.413 +03:00 [INF] Application is shutting down...

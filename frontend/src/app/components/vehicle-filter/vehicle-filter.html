@@ -1,0 +1,28 @@
+<dx-drop-down-box
+  [(value)]="treeBoxValue"
+  [inputAttr]="{ 'aria-label': 'Owner' }"
+  [(opened)]="isTreeBoxOpened"
+  valueExpr="ID"
+  displayExpr="name"
+  placeholder="Select a value..."
+  [showClearButton]="true"
+  [dataSource]="treeDataSource"
+  (onValueChanged)="onValueChanged($event)"
+  (onOptionChanged)="onOptionChanged($event)"
+  [width]="400"
+>
+  <div *dxTemplate="let data of 'content'">
+    <dx-tree-view
+      [dataSource]="treeDataSource"
+      dataStructure="plain"
+      keyExpr="ID"
+      parentIdExpr="categoryId"
+      selectionMode="single"
+      displayExpr="name"
+      [selectByClick]="true"
+      (onContentReady)="$event.component.selectItem(treeBoxValue)"
+      (onItemSelectionChanged)="onItemSelectionChanged($event)"
+    >
+    </dx-tree-view>
+  </div>
+</dx-drop-down-box>
