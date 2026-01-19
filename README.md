@@ -14,7 +14,7 @@ A full-stack vehicle tracking application built with .NET Core and Angular. This
 - **Backend:** .NET 8 Web API, Entity Framework Core
 - **Frontend:** Angular 17+
 - **Database:** PostgreSQL
-- **Tools:** Graylog (Logging), Docker (Optional for Graylog)
+- **Tools:** Graylog (Logging)
 
 ## 🔐 Default Login Credentials
 For ease of testing, the database script includes two pre-configured accounts:
